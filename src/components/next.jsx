@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import TableRow from "./tablecomp";
-let data = [];
+
 //  for storing the up the data they give
 let heading = ["Id", "Title", "Description"];
 function Next() {
+//   for rendering the new data to the array atready exist
+  const [data, setData] = useState([]);
   const [descri, setDescri] = useState({
     title: "",
     description: ""
@@ -24,9 +26,15 @@ function Next() {
     let value = id;
     value++;
     setId(value);
-    let dataconsist = [value, descri.title, descri.description];
-    data.push(dataconsist);
-    // console.log(data);
+   let dataconsist = {
+      id: value,
+      title: descri.title,
+      description: descri.description
+    };
+    setData((prevValues) => {
+      return [...prevValues, dataconsist];
+    });
+    console.log(data);
   }
 
   return (
