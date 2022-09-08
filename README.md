@@ -18,7 +18,7 @@ localStorage.getItem() and acc. to that take the decision .
 For the Post Page:
 There is an extra need for forming a one more component TableRow like for all the updates and submit we don't want to that manually that can be done by all by itself is 
 using tha map function on the TableRow and for any changes th emaping will be done . Th eone thing to keep in mind is that of like when we click on the button 
-we dont want to refresh so that's why Here comes the functionality of event.preventDefault().
+we dont want to refresh so that's why Here comes the functionality of event.preventDefault(). There is also a useState hook for the array consisting all the objects for titles id and descriptions.
 
 
 The only Thing left is Routing :
