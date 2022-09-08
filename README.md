@@ -23,3 +23,5 @@ we dont want to refresh so that's why Here comes the functionality of event.prev
 
 The only Thing left is Routing :
 It is done by BrowserDefault,Route and Switches from the react-dom-router .
+Or Here we also do some kind of conditiona rendering also for rendering different components but for that we have to define a somewhat kinda buttob or something for 
+which the click we will be able to understand at how far the user have reached 
